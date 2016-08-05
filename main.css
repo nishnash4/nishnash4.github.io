@@ -4,14 +4,15 @@ body {
     padding: 0;
     background-color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
+    color: #fff;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -70,7 +71,7 @@ a:active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 300px;
     height: 300px;
     margin-top: -150px;
@@ -88,14 +89,12 @@ a:active {
 .porttext,
 .conttext,
 .resutext {
-    color: #ffffff;
-    font-size: 0.35em;
+    font-size: 0.5em;
     text-align: center;
     margin-top: 30px;
 }
 
 .namecard {
-    color: #ffffff;
     font-size: 60px;
     position: absolute;
     margin-top: -320px;
@@ -105,5 +104,56 @@ a:active {
 .desc {
     font-size: 0.5em;
     margin-left: 15px;
+    line-height: 12px;
+}
+
+.vertbar {
+    width: 50px;
+    height: 100%;
+    background-color: #383838;
+    margin-left: 125px;
+    position: fixed;
+}
+
+.leftlogo {
+    background-image: url(assets/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 175px;
+    border: 10px;
+    border-color: #383838;
+    border-style: solid;
+    transition: border-color 0.5s;
+    margin-left: -45px;
+    margin-top: 40px;
+    transition: border-color 0.5s;
+    position: fixed;
+}
+
+.leftlogo:hover {
+    border-color: gray;
+}
+
+.header {
+    width: 70%;
+    margin-left: 275px;
+    margin-top: 10px;
+}
+
+.content {
+    width: 70%;
+    margin-left: 275px;
+}
+
+.contactname {
+    font-size: 1em;
+}
+
+.byline {
+    font-size: 0.5em;
     line-height: 12px;
 }
