@@ -2,185 +2,44 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: #fff;
+    font-size: 30px;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #fff;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
 }
 
-.horizbar {
-    width: 100%;
-    height: 100px;
-    background-color: #383838;
-    margin-top: 500px;
-}
-
-.menubar {
-    display: flex;
-    justify-content: space-around;
-}
-
-.port,
-.cont,
-.resu {
-    width: 100px;
-    height: 100px;
-    transition: background-color 0.5s;
-}
-
-.porticon,
-.conticon,
-.resuicon {
-    width: 60px;
-    height: 60px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.pagewidth {
+    width: 80%;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
-.port:hover,
-.cont:hover,
-.resu:hover {
-    background-color: gray;
-}
-
-.porticon {
-    background-image: url(assets/portfolio.png);
-}
-
-.conticon {
-    background-image: url(assets/contact.png);
-}
-
-.resuicon {
-    background-image: url(assets/resume.png);
-}
-
-.propic {
-    background-image: url(assets/logo.jpg);
+.logo {
+    background-image: url(logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    width: 300px;
-    height: 300px;
-    margin-top: -150px;
-    border-radius: 350px;
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
     border: 20px;
-    border-color: #383838;
+    border-color: black;
     border-style: solid;
     transition: border-color 0.5s;
+    margin: 0 auto;
+    margin-top: 75px;
 }
 
-.propic:hover {
-    border-color: gray;
-}
-
-.porttext,
-.conttext,
-.resutext {
-    font-size: 0.5em;
+.pagecontent {
     text-align: center;
-    margin-top: 30px;
 }
 
-.namecard {
-    font-size: 60px;
-    position: absolute;
-    margin-top: -320px;
-    margin-left: 340px;
-}
-
-.desc {
-    font-size: 0.5em;
-    margin-left: 15px;
-    margin-top: -24px;
-}
-
-.vertbar {
-    width: 50px;
-    height: 100%;
-    background-color: #383838;
-    margin-left: 125px;
-    position: fixed;
-}
-
-.leftlogo {
-    background-image: url(assets/logo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    border-radius: 175px;
-    border: 10px;
-    border-color: #383838;
-    border-style: solid;
-    transition: border-color 0.5s;
-    margin-left: -45px;
-    margin-top: 40px;
-    transition: border-color 0.5s;
-    position: fixed;
-}
-
-.leftlogo:hover {
-    border-color: gray;
-}
-
-.header {
-    width: 70%;
-    margin-left: 275px;
-    margin-top: 10px;
-}
-
-.content {
-    width: 70%;
-    margin-left: 275px;
-}
-
-.contactname {
-    font-size: 1em;
-}
-
-.byline {
-    font-size: 0.5em;
-    line-height: 12px;
-}
-
-.miniport,
-.minicont,
-.miniresu {
-	width: 40px;
-    height: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin: 0 auto;
-	font-size: 0.6em;
-}
-
-.miniport {
-    background-image: url(assets/portfolio.png);
-	margin-top: 230px;
-}
-
-.minicont {
-    background-image: url(assets/contact.png);
-	margin-top: 20px;
-}
-
-.miniresu {
-    background-image: url(assets/resume.png);
-	margin-top: 30px;
+.resumelink {
+    font-size: 20px;
 }
