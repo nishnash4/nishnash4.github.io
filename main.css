@@ -20,7 +20,7 @@ a:active {
 }
 
 .logo {
-    background-image: url(logo.jpg);
+    background-image: url(/assets/logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
