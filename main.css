@@ -40,6 +40,7 @@ a:active {
     text-align: center;
 }
 
-.resumelink {
+.description {
     font-size: 20px;
+    margin-top: 5px;
 }
