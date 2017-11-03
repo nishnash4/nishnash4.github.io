@@ -25,10 +25,10 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 120px;
-    border: 20px;
+    border: 15px;
     border-color: black;
     border-style: solid;
     transition: border-color 0.5s;
