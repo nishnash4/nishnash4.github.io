@@ -214,3 +214,36 @@ nav {
     background-size: cover;
     padding: 20px;
 }
+
+/* BRODOVITCH */
+.brodogrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brodocol {
+    width: 45%;
+}
+
+.brodoimg {
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.brodoimgsm {
+    width: 100%;
+    height: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.finalbrodo {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
