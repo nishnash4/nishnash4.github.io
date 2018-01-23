@@ -1,17 +1,13 @@
+/* BASE DOCUMENT STYLING */
 html,
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: black;
-    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
 }
 
 .pagewidth {
@@ -19,28 +15,256 @@ a:active {
     margin: 0 auto;
 }
 
-.logo {
-    background-image: url(assets/logo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
-    width: 150px;
-    height: 150px;
-    border-radius: 120px;
-    border: 15px;
-    border-color: black;
-    border-style: solid;
-    transition: border-color 0.5s;
-    margin: 0 auto;
-    margin-top: 75px;
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
 }
 
-.pagecontent {
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+    font-size: 2.827em;
+}
+
+h3 {
+    font-size: 1.999em;
+}
+
+h4 {
+    font-size: 1.414em;
+}
+
+small,
+.font_small {
+    font-size: 0.707em;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.sectionheader {
+    text-align: center;
+    font-size: 1.414em;
+}
+
+/* LINK STYLING */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+/* NAVIGATION STYLING */
+nav {
+    margin-top: 20px;
+}
+
+.navigation-bar {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation-image {
+    width: 100px;
+    height: 100px;
+    margin-left: -18px;
+}
+
+.navigation-linkgrouping {
+    display: flex;
+}
+
+.navigation-link {
+    width: 100px;
+}
+
+/* LANDING STYLING */
+.landing {
     text-align: center;
 }
 
-.description {
-    font-size: 20px;
-    margin-top: 5px;
+.hello {
+    font-weight: 700;
+    font-size: 2.827em;
+}
+
+.introduction {
+    font-weight: 300;
+    font-size: 1.414em;
+}
+
+/* GRID OF WORK */
+.workgrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.griditem {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
+}
+
+.gridtext {
+    width: 350px;
+    height: 250px;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    transition-duration: 0.5s;
+}
+
+.gridtext:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.gridtitle {
+    font-size: 1.414em;
+    font-weight: 700;
+    padding-top: 90px;
+}
+
+.griddescription {
+    font-weight: 300;
+}
+
+/* QUICK LINK NAVIGATION */
+.quicknav-bar {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quicknav-linkgrouping {
+    display: flex;
+}
+
+.quicknav-link {
+    padding: 0 20px;
+}
+
+/* GRID IMAGES */
+.mycourses {
+    background-image: url(assets/thumbnails/gui.png);
+}
+
+.arizona {
+    background-image: url(assets/thumbnails/arizona.png);
+}
+
+.cinema {
+    background-image: url(assets/thumbnails/3d.png);
+}
+
+.brodovitch {
+    background-image: url(assets/thumbnails/brodovitch.png);
+}
+
+/* PROJECT PAGE STYLING */
+.projecttitle {
+    font-size: 1.999em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.projecthero {
+    width: 100%;
+    height: auto;
+    background-color: #0E33AA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pdfpage {
+    width: 100%;
+    height: auto;
+    background-color: #0E33AA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* RENDER GRID */
+.rendergrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.renders {
+    width: 40%;
+    height: 100%;
+/*    background-color: #0E33AA;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* BRODOVITCH */
+.brodogrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brodocol {
+    width: 45%;
+}
+
+.brodoimg {
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.brodoimgsm {
+    width: 100%;
+    height: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.finalbrodo {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+.abouttext {
+    width: 40%;
 }
