@@ -151,6 +151,23 @@ nav {
     font-weight: 300;
 }
 
+/* QUICK LINK NAVIGATION */
+.quicknav-bar {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quicknav-linkgrouping {
+    display: flex;
+}
+
+.quicknav-link {
+    padding: 0 20px;
+}
+
 /* GRID IMAGES */
 .mycourses {
     background-image: url(assets/mycourses.png)
@@ -166,4 +183,17 @@ nav {
 .projecthero {
     width: 100%;
     height: auto;
+    background-color: #0E33AA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pdfpage {
+    width: 100%;
+    height: auto;
+    background-color: #0E33AA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
