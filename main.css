@@ -122,10 +122,13 @@ nav {
     width: 350px;
     height: 250px;
     margin: 10px;
-    background-color: #0E33AA;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
 }
 
 .gridtext {
@@ -134,11 +137,13 @@ nav {
     opacity: 0;
     color: white;
     text-align: center;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
+    transition-duration: 0.5s;
 }
 
 .gridtext:hover {
     opacity: 1;
+    transition-duration: 0.5s;
 }
 
 .gridtitle {
@@ -170,7 +175,19 @@ nav {
 
 /* GRID IMAGES */
 .mycourses {
-    background-image: url(assets/mycourses.png)
+    background-image: url(assets/thumbnails/gui.png);
+}
+
+.arizona {
+    background-image: url(assets/thumbnails/arizona.png);
+}
+
+.cinema {
+    background-image: url(assets/thumbnails/3d.png);
+}
+
+.brodovitch {
+    background-image: url(assets/thumbnails/brodovitch.png);
 }
 
 /* PROJECT PAGE STYLING */
