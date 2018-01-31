@@ -268,3 +268,18 @@ nav {
 .abouttext {
     width: 40%;
 }
+
+/* BUTTON STYLING */
+.button {
+    background-color: black;
+    width: 180px;
+    height: 60px;
+    color: white;
+    border-radius: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: dimgray;
+}
