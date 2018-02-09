@@ -5,8 +5,7 @@
         <meta name="description" content="Zach Burdett is a designer and photographer currently attending the Rochester Institute of Technology for New Media Design." />
         <meta name="author" content="Zach Burdett" />
         <meta name="keywords" content="HTML, CSS, photography, design, RIT, Rochester Institute of Technology, New Media Design, web design" />
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700' rel='stylesheet' type='text/css'>
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,6 +13,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script>
@@ -28,48 +29,66 @@
     <body>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        <nav>
-            <div class="pagewidth">
-                <div class="navigation-bar">
-                    <div class="navigation-logo">
-                        <a href="index.html">
-                            <img src="assets/logo.png" alt="ZB Logo" class="navigation-image"/>
-                        </a>
-                    </div>
-                    <div class="navigation-linkgrouping">
-                        <div class="navigation-link">
-                            <a href="index.html">Work</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a>
-                        </div>
-                    </div>
-                </div>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="responsive-img" src="assets/logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="assets/logo.png" />
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
             </div>
         </nav>
-        <br />
-        <br />
         <main>
-            <div class="pagewidth">
-                <div class="projecttitle">Alexey Brodovitch Poster</div>
-                <div class="projectdescription">A poster for a fictitious event inspired by the work of Alexey Brodovitch</div>
-                <br />
-                <div class="finalbrodo">
-                    <img src="assets/brodovitch/final.png" class="brodoimg" />
+            <div class="container">
+                <p class="title">Alexey Brodovitch Poster</p>
+                <p class="flow-text">A poster inspired by magazine designer Alexey Brodovitch.</p>
+                <div class="row">
+                    <div class="col m6">
+                        <p class="flow-text">Final Poster</p>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/brodovitch/final.png" class="materialboxed" data-caption="Final Poster" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <br />
-                <div class="projecttitle">Design Explorations</div>
-                <div class="brodogrid">
-                    <div class="brodocol">
-                        <img src="assets/brodovitch/abro-01.png" class="brodoimg" />
+                <p class="flow-text">Design Explorations</p>
+                <div class="row">
+                    <div class="col m5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/brodovitch/abro-01.png" class="materialboxed" data-caption="Exploration 1" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="brodocol">
-                        <img src="assets/brodovitch/abro-02.png" class="brodoimgsm" />
+                    <div class="col m5 brodovitch-horiz">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/brodovitch/abro-02.png" class="materialboxed" data-caption="Exploration 2" />
+                            </div>
+                        </div>
                         <br />
-                        <img src="assets/brodovitch/abro-03.png" class="brodoimgsm" />
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/brodovitch/abro-03.png" class="materialboxed" data-caption="Exploration 3" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
