@@ -5,8 +5,7 @@
         <meta name="description" content="Zach Burdett is a designer and photographer currently attending the Rochester Institute of Technology for New Media Design." />
         <meta name="author" content="Zach Burdett" />
         <meta name="keywords" content="HTML, CSS, photography, design, RIT, Rochester Institute of Technology, New Media Design, web design" />
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700' rel='stylesheet' type='text/css'>
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,6 +13,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script>
@@ -28,61 +29,131 @@
     <body>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        <nav>
-            <div class="pagewidth">
-                <div class="navigation-bar">
-                    <div class="navigation-logo">
-                        <a href="index.html">
-                            <img src="assets/logo.png" alt="ZB Logo" class="navigation-image"/>
-                        </a>
-                    </div>
-                    <div class="navigation-linkgrouping">
-                        <div class="navigation-link">
-                            <a href="index.html">Work</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a>
-                        </div>
-                    </div>
-                </div>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="responsive-img" src="assets/logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="assets/logo.png" />
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
             </div>
         </nav>
-        <br />
-        <br />
         <main>
-            <div class="pagewidth">
-                <img src="assets/myCourses/deck0.png" class="pdfpage" />
-                <div class="quicknav-bar">
-                    <div class="quicknav-linkgrouping">
-                        <div class="quicknav-link">
-                            <a href="https://marvelapp.com/71icih7" target="_blank">HiFi Wireframe Prototype</a>
+            <div class="container">
+                <p class="title">myCourses Redesign</p>
+                <p class="flow-text">A redesign of RIT's outdated Learning Management System myCourses.</p>
+                <br />
+                <div class="row">
+                    <div class="col m6 center">
+                        <a class="waves-effect waves-red btn red darken-1">HiFi Wireframe Prototype</a>
+                    </div>
+                    <div class="col m6 center">
+                        <a class="waves-effect waves-red btn red darken-1">Visual Design Prototype</a>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col m12">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck1.png" class="materialboxed" data-caption="Design Deck: Page 1" />
+                            </div>
                         </div>
-                        <div class="quicknav-link">
-                            <a href="https://marvelapp.com/318haha" target="_blank">Visual Design Prototype</a>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck2.png" class="materialboxed" data-caption="Design Deck: Page 2" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck3.png" class="materialboxed" data-caption="Design Deck: Page 3" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck4.png" class="materialboxed" data-caption="Design Deck: Page 4" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck5.png" class="materialboxed" data-caption="Design Deck: Page 5" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck6.png" class="materialboxed" data-caption="Design Deck: Page 6" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck7.png" class="materialboxed" data-caption="Design Deck: Page 7" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck8.png" class="materialboxed" data-caption="Design Deck: Page 8" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck9.png" class="materialboxed" data-caption="Design Deck: Page 9" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck10.png" class="materialboxed" data-caption="Design Deck: Page 10" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck11.png" class="materialboxed" data-caption="Design Deck: Page 11" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck12.png" class="materialboxed" data-caption="Design Deck: Page 12" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck13.png" class="materialboxed" data-caption="Design Deck: Page 13" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck14.png" class="materialboxed" data-caption="Design Deck: Page 14" />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/myCourses/deck15.png" class="materialboxed" data-caption="Design Deck: Page 15" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img src="assets/myCourses/deck1.png" class="pdfpage" />
-                <img src="assets/myCourses/deck2.png" class="pdfpage" />
-                <img src="assets/myCourses/deck3.png" class="pdfpage" />
-                <img src="assets/myCourses/deck4.png" class="pdfpage" />
-                <img src="assets/myCourses/deck5.png" class="pdfpage" />
-                <img src="assets/myCourses/deck6.png" class="pdfpage" />
-                <img src="assets/myCourses/deck7.png" class="pdfpage" />
-                <img src="assets/myCourses/deck8.png" class="pdfpage" />
-                <img src="assets/myCourses/deck9.png" class="pdfpage" />
-                <img src="assets/myCourses/deck10.png" class="pdfpage" />
-                <img src="assets/myCourses/deck11.png" class="pdfpage" />
-                <img src="assets/myCourses/deck12.png" class="pdfpage" />
-                <img src="assets/myCourses/deck13.png" class="pdfpage" />
-                <img src="assets/myCourses/deck14.png" class="pdfpage" />
-                <img src="assets/myCourses/deck15.png" class="pdfpage" />
-                <br />
-                <div class="projecttitle">Mobile Interaction</div>
-                <iframe src="https://player.vimeo.com/video/252283681" width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div class="row">
+                    <div class="col m12">
+                        <p class="flow-text">Mobile Interaction Demo</p>
+                        <div class="video-container">
+                            <iframe src="https://player.vimeo.com/video/252283681" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
