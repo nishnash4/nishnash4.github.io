@@ -5,14 +5,18 @@
         <meta name="description" content="Zach Burdett is a designer and photographer currently attending the Rochester Institute of Technology for New Media Design." />
         <meta name="author" content="Zach Burdett" />
         <meta name="keywords" content="HTML, CSS, photography, design, RIT, Rochester Institute of Technology, New Media Design, web design" />
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,47 +27,46 @@
         </script>
     </head>
     <body>
-        <nav>
-            <div class="pagewidth">
-                <div class="navigation-bar">
-                    <div class="navigation-logo">
-                        <a href="index.html">
-                            <img src="assets/logo.png" alt="ZB Logo" class="navigation-image"/>
-                        </a>
-                    </div>
-                    <div class="navigation-linkgrouping">
-                        <div class="navigation-link">
-                            <a href="index.html">Work</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a>
-                        </div>
-                    </div>
-                </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="responsive-img" src="assets/logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="assets/logo.png" />
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
             </div>
         </nav>
         <br />
-        <br />
         <main>
-            <div class="pagewidth">
-                <div class="projecttitle">
-                    About
+            <div class="container">
+                <div class="row">
+                    <div class="col m9">
+                        <h3>My name is Zach Burdett.</h3>
+                        <p>I am currently attending the <b>Rochester Institute of Technology</b> in the <b>New Media Design</b> program, expecting to graduate in 2019.</p>
+                        <p>As an evergrowing designer, my current interests lie in user interface design, user experience, visual design, as well as motion graphics.</p>
+                        <p>When I'm not working on my projects, you're likely to find me spending time with my closest friends or strumming along to my favorite songs on the guitar or the banjo.</p>
+                        <a class="waves-effect waves-red btn red darken-1" href="mailto:zrburdett@gmail.com">Send me an Email</a>
+                    </div>
+                    <dic class="col m3"></dic>
                 </div>
-                <div class="abouttext">
-                    <p>My name is Zach Burdett.</p>
-                    <p>I am currently attending the Rochester Institute of Technology for New Media Design, expecting to graduate in 2019.</p>
-                    <p>As an evergrowing designer, my current interests lie in user interface design, user experience, visual design, as well as motion graphics.</p>
-                    <p>When I'm not working on my projects, you're likely to find me spending time with my closest friends or strumming along to my favorite songs on the guitar or the banjo.</p>
-                </div>
-                <a href="mailto:zrburdett@gmail.com" target="_blank">
-                    <div class="button">Send me an email</div>
-                </a>
             </div>
         </main>
-        <footer>
-        </footer>
     </body>
 </html>

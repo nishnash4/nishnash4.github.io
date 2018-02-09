@@ -5,14 +5,18 @@
         <meta name="description" content="Zach Burdett is a designer and photographer currently attending the Rochester Institute of Technology for New Media Design." />
         <meta name="author" content="Zach Burdett" />
         <meta name="keywords" content="HTML, CSS, photography, design, RIT, Rochester Institute of Technology, New Media Design, web design" />
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,73 +27,104 @@
         </script>
     </head>
     <body>
-        <nav>
-            <div class="pagewidth">
-                <div class="navigation-bar">
-                    <div class="navigation-logo">
-                        <a href="index.html">
-                            <img src="assets/logo.png" alt="ZB Logo" class="navigation-image"/>
-                        </a>
-                    </div>
-                    <div class="navigation-linkgrouping">
-                        <div class="navigation-link">
-                            <a href="index.html">Work</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="navigation-link">
-                            <a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a>
-                        </div>
-                    </div>
-                </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="responsive-img" src="assets/logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="assets/logo.png" />
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ZachBurdett_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
             </div>
         </nav>
-        <br />
-        <br />
         <main>
-            <div class="pagewidth landing">
-                <div class="hello">I'm Zach Burdett.</div>
-                <div class="introduction">A UI/UX Designer from Rochester, NY</div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <div class="pagewidth sectionheader">Work</div>
-            <hr />
-            <br />
-            <div class="pagewidth workgrid">
-                <div class="griditem mycourses">
-                    <a href="mycourses.html">
-                        <div class="gridtext">
-                            <div class="gridtitle">myCourses Redesign</div>
-                            <div class="griddescription">UI/UX</div>
+            <div class="container">
+                <p class="center title"><b>I'm Zach Burdett.</b></p>
+                <p class="center flow-text">A UI/UX Designer from Rochester, NY</p>
+                <br />
+                <div class="row">
+                    <div class="col m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/thumbnails/gui.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">myCourses Redesign</span>
+                                <p>A redesign of RIT's Learning Management System myCourses.</p>
+                                <br />
+                                <p class="grey-text">UI/UX - Illustrator, After Effects</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="mycourses.html" class="red-text">Learn more</a>
+                            </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="col m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/thumbnails/arizona.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Arizona Roadtrip</span>
+                                <p>An animaion based on a roadtrip from Rochester, NY to New River, AZ.</p>
+                                <br />
+                                <p class="grey-text">Animation - After Effects, Premiere</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="arizona.html" class="red-text">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="griditem arizona">
-                    <a href="arizona.html">
-                        <div class="gridtext">
-                            <div class="gridtitle">Arizona Roadtrip</div>
-                            <div class="griddescription">Animation</div>
+                <div class="row">
+                    <div class="col m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/thumbnails/3d.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">3D Renderings</span>
+                                <p>Various objects created using Cinema 4D.</p>
+                                <br />
+                                <p class="grey-text">3D - Cinema 4D</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="renders.html" class="red-text">Learn more</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="griditem cinema">
-                    <a href="renders.html">
-                        <div class="gridtext">
-                            <div class="gridtitle">3D Renders</div>
-                            <div class="griddescription">Cinema 4D</div>
+                    </div>
+                    <div class="col m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/thumbnails/brodovitch.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Alexey Brodovitch Poster</span>
+                                <p>A poster inspired by magazine designer Alexey Brodovitch.</p>
+                                <br />
+                                <p class="grey-text">Visual Design - Illustrator</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="brodovitch.html" class="red-text">Learn more</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="griditem brodovitch">
-                    <a href="brodovitch.html">
-                        <div class="gridtext">
-                            <div class="gridtitle">Alexey Brodovitch Poster</div>
-                            <div class="griddescription">Visual Design</div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </main>

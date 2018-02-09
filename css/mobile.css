@@ -1,0 +1,26 @@
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper {
+        margin: 0 auto;
+        width: 72%;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.2em;
+        margin-bottom: -15px;
+    }
+}
+
+@media (min-width: 600px) {
+    div.col.m5.brodovitch-horiz {
+        width: 45.5%;
+    }
+}
