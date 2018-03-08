@@ -57,3 +57,14 @@ nav ul a{
     font-size: 3em;
     margin-bottom: -25px;
 }
+
+/* RESUME STLYING */
+.resume-header,
+.resume-location {
+    font-weight: 700;
+}
+
+.resume-date {
+    font-style: italic;
+    font-weight: 300;
+}
