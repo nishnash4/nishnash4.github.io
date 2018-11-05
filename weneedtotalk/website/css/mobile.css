@@ -4,24 +4,50 @@
     }
     
     .missionstatement {
-        font-size: 22px;
+        font-size: 28px;
     }
     
     h2 {
         font-size: 32px;
     }
+    
+    .header-cta {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    
     .title {
-        font-size: 42px;
+        font-size: 36px;
     }
     
     .missionstatement {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     h2 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+    
+    .nav-logo {
+        height: 56px;
+    }
+    
+    .nav-wntt {
+        top: -20px;
+    }
+    
+    .header-cta {
+        font-size: 16px;
+    }
+    
+    .down-arrow {
+        width: 30px;
+        height: 30px;
+        margin-top: -16px;
     }
 }
