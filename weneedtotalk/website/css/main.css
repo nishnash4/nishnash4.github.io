@@ -1,11 +1,28 @@
+/* Global Changes */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 .rit-orange {
     background-color: #E87400;
 }
 
+blockquote {
+    border-color: #E87400;
+}
+
+hr {
+    background-color: black;
+    opacity: 0.2;
+    border-style: none;
+    height: 1px;
+    width: 70%;
+}
+
+
+
+/* Navigation */
 .nav-logo {
     height: 64px;
     line-height: 64px;
@@ -30,6 +47,9 @@ body {
     margin: 5px;
 }
 
+
+
+/* Header */
 .header-logo {
     width: 225px;
     height: 225px;
@@ -49,6 +69,7 @@ body {
     height: 4px;
     background-color: white;
     border-style: none;
+    opacity: 1;
 }
 
 .missionstatement {
@@ -68,4 +89,30 @@ body {
     height: 50px;
     margin: 0 auto;
     margin-top: -25px;
+}
+
+
+/* Main Content */
+h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
 }
