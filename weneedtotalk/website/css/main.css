@@ -4,6 +4,30 @@ body {
     font-size: 18px;
 }
 
+h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .rit-orange {
     background-color: #E87400;
 }
@@ -19,7 +43,6 @@ hr {
     height: 1px;
     width: 70%;
 }
-
 
 
 /* Navigation */
@@ -46,7 +69,6 @@ hr {
     border-style: solid;
     margin: 5px;
 }
-
 
 
 /* Header */
@@ -92,26 +114,24 @@ hr {
 
 
 /* Main Content */
-h2 {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 500;
-    font-size: 38px;
+.contribute {
+    position: relative;
+    overflow: hidden;
 }
 
-h3 {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 500;
-    font-size: 24px;
-}
-
-h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-
-h5 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+.contrtext {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    color: white; 
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
     font-size: 16px;
-    line-height: 20px;
+}
+
+.contribute:hover .contrtext {
+    text-decoration: underline;
 }
