@@ -1,3 +1,4 @@
+/* Tablet CSS */
 @media (max-width: 992px) {
     .title {
         font-size: 54px;
@@ -16,6 +17,7 @@
     }
 }
 
+/* Mobile CSS */
 @media (max-width: 600px) {
     body {
         font-size: 16px;
