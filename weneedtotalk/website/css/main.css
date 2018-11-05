@@ -169,3 +169,8 @@ footer {
 footer hr {
     margin: 0;
 }
+
+.foot-brand {
+    margin-top: 15px;
+    margin-bottom: -45px;
+}
