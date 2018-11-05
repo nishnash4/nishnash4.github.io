@@ -145,3 +145,27 @@ hr {
 .hashtag {
     color: #E87400;
 }
+
+
+/* Footer */
+footer {
+    padding: 15px;
+}
+
+.foot-wntt {
+    color: white;
+    position: relative;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+footer hr {
+    margin: 0;
+}
