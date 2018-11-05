@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rit-orange {
+    background-color: #E87400;
+}
+
+.nav-logo {
+    height: 64px;
+    line-height: 64px;
+}
+
+.nav-wntt {
+    font-size: 24px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    display:inline-block;
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    top: -24px;
+    padding-left: 10px;
+}
+
+.getinv-nav {
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    margin: 5px;
+}
+
+.header-logo {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Zilla Slab', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+}
+
+.header-hr {
+    width: 275px;
+    height: 4px;
+    background-color: white;
+    border-style: none;
+}
+
+.missionstatement {
+    font-size: 32px;
+    color: white;
+}
+
+.header-cta {
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+    transition: 2s;
+}
+
+.down-arrow {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: -25px;
+}
