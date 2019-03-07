@@ -1,2 +1,2 @@
 # Zach Burdett
-I am a New Media Design student at the Rochester Institute of Technology.
+Zach Burdett is a user experience designer from Rochester, New York currently studying New Media Design at the Rochester Institute of Technology, graduating in May 2019.
