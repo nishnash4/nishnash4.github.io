@@ -18,6 +18,10 @@ blockquote {
     border-color: #1a237e;
 }
 
+.no-shadows {
+    box-shadow: none!important;
+}
+
 /* NAVIGATION STYLING */
 .brand-logo img {
     height: 80px;
