@@ -2,7 +2,7 @@
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+    html { font-family: 'Inter var', sans-serif; }
 }
 
 html,
@@ -77,6 +77,26 @@ nav ul a{
 .cardhover:hover {
     opacity: 0.8;
     transition: 0.2s;
+}
+
+/* CANVAS STYLING */
+canvas {
+    min-height: 250px;
+    max-width: 100%;
+}
+
+/* MYCOURSES STYLING */
+.myc-vimeo {
+    background-color: #E5E5E5;
+}
+
+.myc-btn {
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* RESUME STLYING */
