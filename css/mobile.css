@@ -5,6 +5,12 @@
     }
 }
 
+@media (max-width: 992px) {
+    .empty-resume-div {
+        display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .nav-wrapper {
         margin: 0 auto;
