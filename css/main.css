@@ -101,6 +101,10 @@ canvas {
     padding-bottom: 10px;
 }
 
+.hero {
+    margin: 0 auto;
+}
+
 /* RESUME STLYING */
 .resume-header,
 .resume-position {
