@@ -81,6 +81,15 @@ nav ul a{
     transition: 0.2s;
 }
 
+/* ABOUT STYLING */
+.contact-message {
+    padding: 0!important;
+}
+
+.contact-submit {
+    padding: 0 .75rem;
+}
+
 /* CANVAS STYLING */
 canvas {
     min-height: 250px;
