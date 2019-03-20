@@ -70,6 +70,7 @@ nav ul a{
 .title {
     font-size: 3em;
     margin-bottom: -25px;
+    font-weight: 600;
 }
 
 .cardhover {
@@ -84,12 +85,63 @@ nav ul a{
 /* CANVAS STYLING */
 canvas {
     min-height: 250px;
+    max-height: 300px;
     max-width: 100%;
 }
 
-/* MYCOURSES STYLING */
-.myc-vimeo {
+.canvas-container {
+    padding: 20px;
+}
+
+/* CASE STUDY STYLING */
+.header {
+    font-size: 1.8em;
+    margin-bottom: -10px;
+    font-weight: 700;
+}
+
+.submission {
+    margin-bottom: 20px;
+}
+
+.case-study-vimeo {
     background-color: #E5E5E5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E5E5E5;
+}
+
+.case-study-section {
+    padding-top: 175px;
+    padding-bottom: 175px;
+}
+
+.case-study-section:first-child,
+.case-study-section:last-child {
+    padding-top: 0;
+}
+
+.case-study-section .row {
+    padding-bottom: 30px;
+}
+
+.marvel-app {
+    padding-bottom: 75%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F4F4F4;
+}
+
+.caption {
+    font-weight: 300;
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+    padding-bottom: 25px;
+}
+
+.phone-mockup {
+    margin-top: -15px;
 }
 
 .myc-btn {
@@ -99,10 +151,6 @@ canvas {
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.hero {
-    margin: 0 auto;
 }
 
 /* RESUME STLYING */
