@@ -132,6 +132,12 @@ canvas {
     border-color: #F4F4F4;
 }
 
+.bounding-border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F4F4F4;
+}
+
 .caption {
     font-weight: 300;
     font-size: 0.9em;
@@ -142,15 +148,6 @@ canvas {
 
 .phone-mockup {
     margin-top: -15px;
-}
-
-.myc-btn {
-    width: 100%;
-    height: auto;
-    min-height: 20px;
-    line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 /* RESUME STLYING */
