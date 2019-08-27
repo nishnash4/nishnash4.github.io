@@ -24,7 +24,8 @@
         margin-bottom: -15px;
     }
     
-    .case-study-empty-div {
+    .case-study-empty-div,
+    .copyright {
         display: none;
     }
 }
