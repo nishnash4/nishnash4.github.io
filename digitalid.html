@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Zach Burdett | UX Designer</title>
+        <title>Digital Identities | Zach Burdett</title>
         <meta name="description" content="Zach Burdett is a designer and photographer currently attending the Rochester Institute of Technology for New Media Design." />
         <meta name="author" content="Zach Burdett" />
         <meta name="keywords" content="HTML, CSS, photography, design, RIT, Rochester Institute of Technology, New Media Design, web design" />
@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,23 +24,6 @@
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
             ga('create', 'UA-77119218-1', 'auto');
             ga('send', 'pageview');
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Organization",
-                "url": "http://www.zachburdett.com",
-                "logo": "http://zachburdett.com/assets/logo.png",
-                "email": "mailto:zrburdett@gmail.com",
-                "location": {
-                    "@type": "Place",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Rochester",
-                        "addressRegion": "NY"
-                    }
-                }
-            }
         </script>
     </head>
     <body>
@@ -71,59 +55,57 @@
         </nav>
         <main>
             <div class="container">
-                <p class="center title"><b>I'm Zach Burdett.</b></p>
-                <p class="center flow-text red-text text-darken-1">A User Experience Designer from Rochester, NY</p>
-                <br />
-                <br />
-                <br />
-                <div class="row">
-                    <div class="col m6">
-                        <a href="buildapc.html">
-                            <div class="card hoverable cardhover">
-                                <div class="card-image">
-                                    <img src="assets/thumbnails/pc.png">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title black-text">Build a PC App Design</span>
-                                    <p class="black-text">Simplifying the personal computer building experience.</p>
-                                    <br />
-                                    <p class="grey-text">UI/UX - Illustrator, After Effects, Cinema 4D</p>
-                                </div>
-                            </div>
-                        </a>
+                <div class="case-study-section">
+                    <p class="title">Digital Identities Interactive Exhibit</p>
+                    <p class="flow-text">An interactive exhibit for Imagine RIT 2019 designed to allow visitors to visualize their individuality through personal expression and image abstraction.</p>
+                    <div class="row">
+                        <div class="col m1"></div>
+                        <div class="col m10">
+                            <img src="assets/digiid/start-quiz.png" class="responsive-img materialboxed" data-caption="Loading Screen Mockup" />
+                        </div>
+                        <div class="col m1"></div>
                     </div>
-                    <div class="col m6">
-                        <a href="mycourses.html">
-                            <div class="card hoverable cardhover">
-                                <div class="card-image">
-                                    <img src="assets/thumbnails/gui.png">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title black-text">myCourses Redesign</span>
-                                    <p class="black-text">A redesign of RIT's Learning Management System, myCourses.</p>
-                                    <br />
-                                    <p class="grey-text">UI/UX - Illustrator, After Effects</p>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="row">
+                        <div class="col m1"></div>
+                        <div class="col m5">
+                            <p class="pink-text"><b>TASK</b></p>
+                            <p>
+                                This semester-long senior capstone project was designed and developed by <a href="https://www.linkedin.com/in/alex-seowon-kim/" target="_blank">Alex Kim</a>, <a href="https://shelby-mason.com/" target="_blank">Shelby Mason</a>, Caren Flohr, <a href="https://www.erikakallio.com/" target="_blank">Erika Kallio</a>, <a href="https://www.linkedin.com/in/ian-loomis-rit/" target="_blank">Ian Loomis</a>, <a href="https://www.linkedin.com/in/matthew-freeberg-984ba3105/" target="_blank">Matthew Freeberg</a>, <a href="https://www.linkedin.com/in/patrick-bell-804138106/" target="_blank">Patrick Bell</a>, and myself.
+                            </p>
+                        </div>
+                        <div class="col m3">
+                            <p class="pink-text"><b>DURATION</b></p>
+                            <p>
+                                January - May 2019
+                            </p> 
+                        </div>
+                        <div class="col m2">
+                            <p class="pink-text"><b>ROLE</b></p>
+                            <p>
+                                UI/UX, Development
+                            </p>
+                        </div>
+                        <div class="col m1"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col m6">
-                        <a href="instrument.html">
-                            <div class="card hoverable cardhover">
-                                <div class="card-image">
-                                    <img src="assets/thumbnails/instrument.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title black-text">Instrument Performance Review System</span>
-                                    <p class="black-text">An application design to help leadership of Portland design agency, Instrument, to empower their employees to grow.</p>
-                                    <br />
-                                    <p class="grey-text">UI/UX - Figma, Principle</p>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="col s12">
+                        <div class="video-container case-study-vimeo">
+                            <iframe src="https://player.vimeo.com/video/334577082" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <p class="caption center">Imagine RIT Recap</p>
                     </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h5 class="white-text">Check out another project</h5>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col m6">
                         <a href="wayfinder.html">
                             <div class="card hoverable cardhover">
@@ -139,33 +121,23 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col m6">
-                        <a href="digitalid.html">
-                            <div class="card hoverable cardhover">
+                        <a href="buildapc.html">
+                            <div class="card hoverable cardhover grey lighten-5">
                                 <div class="card-image">
-                                    <img src="assets/thumbnails/digiid.png">
+                                    <img src="assets/thumbnails/pc.png">
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title black-text">Digital Identities Interactive Exhibit</span>
-                                    <p class="black-text">An interactive exhibit for Imagine RIT 2019 designed to allow visitors to visualize their individuality through personal expression and image abstraction.</p>
+                                    <span class="card-title black-text">Build a PC App Design</span>
+                                    <p class="black-text">Simplifying the personal computer building experience.</p>
                                     <br />
-                                    <p class="grey-text">UI/UX, Development - Illustrator, p5, Firebase</p>
+                                    <p class="grey-text">UI/UX - Illustrator, After Effects, Cinema 4D</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col m6">
-                    </div>
                 </div>
             </div>
-        </main>
-        <br />
-        <br />
-        <br />
-        <br />
-        <footer class="page-footer grey darken-4">
             <div class="footer-copyright">
                 <div class="container grey-text text-lighten-4">
                     <a class="grey-text text-lighten-4 copyright">&#169; 2019 Zach Burdett</a>
