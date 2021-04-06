@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Visualizer | Zach Burdett</title>
+        <meta name="description" content="Zach Burdett is a user experience designer who graduated from the Rochester Institute of Technology's New Media Design program in May 2019" />
+        <meta name="author" content="Zach Burdett" />
+        <meta name="keywords" content="Rochester Institute of Technology, RIT, New Media Design, HTML, CSS, JavaScript, UI, User Interface Design, UX, User Experience Design, Visual Design, Motion Design, Web Design, Wireframing, Prototyping, Illustration, Collaboration" />
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-77119218-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
+        <nav class="white no-shadows">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="responsive-img" src="assets/logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="assets/logo.png" />
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <p class="title">Music Visualizer Demo (WIP)</p>
+                <p class="flow-text">Personal project created in Processing that uses live computer audio</p>
+                <br />
+                <div class="video-container">
+                    <iframe src="https://player.vimeo.com/video/533759150" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m6">
+                        <p class="purple-text text-darken-4"><b>CONCEPT</b></p>
+                        <p>
+                            Using the <a href="https://processing.org/reference/libraries/sound/" target="_blank">Processing Sound library</a>, audio is streamed into Processing and both the <a href="https://en.wikipedia.org/wiki/Amplitude" target="_blank">amplitude</a> and the <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform" target="_blank">FFT</a> of the sound are used as a basis for the generated graphics.
+                        </p>
+                        <p>Code for this specific iteration can be found on <a href="https://github.com/zrburdett/zrburdett.github.io/tree/master/sketch_12" target="_blank">GitHub</a>.</p>
+                    </div>
+                    <div class="col m4">
+                        <p class="purple-text text-darken-4"><b>ROLE</b></p>
+                        <p>
+                            Development (Processing)
+                        </p>
+                    </div>
+                    <div class="col m1"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
